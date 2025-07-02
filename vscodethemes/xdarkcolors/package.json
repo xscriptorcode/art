@@ -3,7 +3,7 @@
   "displayName": "xdarkcolors",
   "description": "Minimalist dark with colored accents. A VSCode theme by Xscriptor.",
   "version": "0.0.1",
-  "publisher": "xscriptorcode",
+  "publisher": "xscriptor",
   "engines": {
     "vscode": "^1.101.0"
   },
