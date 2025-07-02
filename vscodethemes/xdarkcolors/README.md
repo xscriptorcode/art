@@ -1,4 +1,4 @@
-# xdarkcolors — Tema oscuro translúcido para Visual Studio Code
+# xdarkcolors — Tema oscuro para Visual Studio Code
 
 **xdarkcolors** es un tema visual para VSCode que combina un fondo oscuro puro con acentos luminosos en azul, violeta y dorado. Diseñado para usuarios que desean una interfaz elegante, legible y sin distracciones, ideal para largas sesiones de programación con alta concentración visual.
 
@@ -24,10 +24,12 @@
 
 ---
 
-## Instalación
+## Instalación:
 
-### Método recomendado (desde archivo `.vsix` local):
+### 1. Ejecuta desde la terminal:
 
 ```bash
 code --install-extension xdarkcolors-0.0.1.vsix
 ```
+
+### 2. abre vscode en el directorio, presiona click derecho sobre la extensión dentro de vscode y presiona en instalar extensión mediante vsix
