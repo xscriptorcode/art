@@ -9,3 +9,11 @@ There are two main categories: color and black-and-white. Each one includes vari
 ## Resolution
 
 Most images are available in 4K resolution (3840x2160) or higher, making them suitable for large screens or cropped for mobile use.
+
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Please credit: **xscriptor**  
+GitHub: [github.com/xscriptorcode/art/images](github.com/xscriptorcode/art/images)
+License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

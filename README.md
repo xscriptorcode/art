@@ -1,1 +1,1 @@
-Un repositorio de concentración de personalizaciones.
+A centralized repository for customizations.
