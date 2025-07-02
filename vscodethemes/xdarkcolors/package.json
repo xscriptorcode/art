@@ -23,7 +23,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "xscriptor",
+        "label": "xdarkcolors",
         "uiTheme": "vs-dark",
         "path": "./themes/xscriptor-color-theme.json"
       }
