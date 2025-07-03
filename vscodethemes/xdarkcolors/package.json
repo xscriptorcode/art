@@ -2,7 +2,7 @@
   "name": "xdarkcolors",
   "displayName": "xdarkcolors",
   "description": "Minimalist dark with colored accents. A VSCode theme by Xscriptor.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "xscriptor",
   "engines": {
     "vscode": "^1.101.0"
@@ -26,6 +26,26 @@
         "label": "xdarkcolors",
         "uiTheme": "vs-dark",
         "path": "./themes/xscriptor-color-theme.json"
+      },
+      {
+        "label": "xplaintext",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xplaintext.json"
+      },
+      {
+        "label": "xtropicalneon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xtropicalneon.json"
+      },
+      {
+        "label": "xcandypop",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xcandypop.json"
+      },
+      {
+        "label": "xgalaxyb",
+        "uiTheme": "vs-dark",
+        "path": "./themes/xgalaxyb.json"
       }
     ]
   }
