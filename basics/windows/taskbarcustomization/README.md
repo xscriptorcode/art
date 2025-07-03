@@ -23,12 +23,6 @@ A translucent acrylic theme with centered icons and a subtle gold border for a c
 
 ![xtranslucid](./xw11-taskbar/xtranslucid/files/xtranslucid.png)
 
----
-
-### [xtranslucid-light](https://github.com/xscriptorcode/xw11-taskbar/tree/main/xtranslucid-light)
-A translucent acrylic theme with centered icons and a subtle gold border for a clean, modern look, light mode.
-
-![xtranslucid](./xw11-taskbar/xtranslucid-light/files/xtranslucid-light.png)
 
 ---
 
@@ -66,7 +60,7 @@ A clean and soft icy gray theme for clarity and neutrality.
 
 ---
 
-## Features
+## Featuresplain
 
 - Custom corner radius and padding
 - Transparent and acrylic backgrounds
