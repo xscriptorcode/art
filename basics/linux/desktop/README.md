@@ -19,6 +19,9 @@
     * Bluetooth Quick Connect
 * Installs additional tools: gnome-tweaks, dconf-editor
 
+### Note: If any extensions fail to install automatically, you can find and install them manually using the Extension Manager.
+
+
 ## Instructions:
 * 1. You can copy and paste the following into your terminal:
 
