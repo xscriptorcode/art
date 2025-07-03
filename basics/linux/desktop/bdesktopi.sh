@@ -2,7 +2,7 @@
 
 set -e
 
-echo "Updating system and installing GNOME extension support..."
+echo "Updating system and installing base packages..."
 sudo apt update
 sudo apt install -y \
   gnome-shell-extensions \
@@ -12,14 +12,33 @@ sudo apt install -y \
   jq \
   unzip \
   gnome-tweaks \
-  dconf-editor
+  dconf-editor \
+  flatpak \
+  git \
+  make
 
-echo "Installing Extension Manager (Flatpak)..."
+echo "Adding Flathub repository if not already added..."
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+echo "Installing Extension Manager via Flatpak..."
 flatpak install -y flathub com.mattjakeman.ExtensionManager
 
 EXTENSIONS_DIR="$HOME/.local/share/gnome-shell/extensions"
 mkdir -p "$EXTENSIONS_DIR"
 
+# Special case: Dash to Dock from GitHub
+install_dash_to_dock() {
+  echo "Installing Dash to Dock from GitHub..."
+  rm -rf "$EXTENSIONS_DIR/dash-to-dock@micxgx.gmail.com"
+  git clone https://github.com/micheleg/dash-to-dock.git
+  cd dash-to-dock
+  make install
+  cd ..
+  rm -rf dash-to-dock
+  gnome-extensions enable dash-to-dock@micxgx.gmail.com || echo "Failed to enable Dash to Dock"
+}
+
+# Generic GNOME Shell extension installer
 install_gnome_extension() {
   EXTENSION_ID=$1
   EXTENSION_NAME=$2
@@ -34,15 +53,21 @@ install_gnome_extension() {
   DEST="$EXTENSIONS_DIR/$UUID"
   mkdir -p "$DEST"
   curl -L "$DOWNLOAD_URL" -o "$DEST/extension.zip"
-  unzip -o "$DEST/extension.zip" -d "$DEST"
-  rm "$DEST/extension.zip"
 
-  gnome-extensions enable "$UUID" || echo "Manual activation may be required for $UUID"
+  if unzip -t "$DEST/extension.zip" >/dev/null 2>&1; then
+    unzip -o "$DEST/extension.zip" -d "$DEST"
+    gnome-extensions enable "$UUID" || echo "Manual activation may be required for $UUID"
+  else
+    echo "Warning: Failed to install $EXTENSION_NAME. Invalid or corrupted download."
+    rm "$DEST/extension.zip"
+  fi
 }
 
-# List of extensions to install (ID Name)
+# First: install Dash to Dock manually
+install_dash_to_dock
+
+# Other extensions (excluding Dash to Dock)
 EXTENSIONS=(
-  "307 Dash_to_Dock"
   "3193 Blur_My_Shell"
   "19 User_Themes"
   "3843 Just_Perfection"
@@ -60,9 +85,9 @@ for item in "${EXTENSIONS[@]}"; do
   install_gnome_extension $item
 done
 
-echo "All extensions downloaded and enabled."
+echo "All extensions processed."
 
-echo "Attempting to reload GNOME Shell (works only on X11)..."
+echo "Attempting to reload GNOME Shell (only works on X11)..."
 busctl --user call org.gnome.Shell /org/gnome/Shell org.gnome.Shell Eval s 'global.reexec_self()' || true
 
 echo "Done. You can manage your extensions via 'Extension Manager' or 'gnome-extensions-app'."
