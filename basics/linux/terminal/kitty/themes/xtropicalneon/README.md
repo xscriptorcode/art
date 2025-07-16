@@ -1,24 +1,27 @@
-# xtropicalneon theme for kitty
-
+# xtropicalneon theme for Kitty
 
 ### [xtropicalneon](./kitty.conf)
 
-
 <p align="center">
-  <img src="./preview.png" alt="Demostración" width="900" style="border-radius: 10px;" />
+  <img src="./preview.png" alt="Preview of the theme" width="900" style="border-radius: 10px;" />
 </p>
 
-## Installation procedures:
+## Installation Instructions
 
-1. download the kitty.conf
-    * Copy the file to your path: ~/.config/kitty/
-
-2. download the kitty.conf
-    * Create the directory if not exists:
-    ``` bash
-        mkdir -p ~/.config/kitty/themes/xtropicalneon
+1. **Download the `kitty.conf` file**  
+    Copy it to your configuration path:
+    ```bash
+    ~/.config/kitty/
     ```
-    * set the theme in your .conf file
+
+
+2. **Use it as a theme include**  
+    Create the theme directory if it doesn’t exist:
+```bash
+mkdir -p ~/.config/kitty/themes/xtropicalneon
+```
+    Then include the theme in your main config file:
+
 ```bash
 echo "include themes/xtropicalneon/kitty.conf" >> ~/.config/kitty/kitty.conf
 ```
