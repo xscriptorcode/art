@@ -26,4 +26,10 @@ git sparse-checkout set images/color
 </p>
 
 ![Demostrarion](./color-starry-paint.jpg)
-![Demostrarion](./xpbsc.jpg)
+
+<p align="center">
+  <img src="./spxp.jpg" alt="Demostración" width="300"/>
+  <img src="./xpbs.jpg" alt="Demostración" width="300"/>
+  <img src="./xpbsc.jpg" alt="Demostración" width="300"/>
+  <img src="./liquidgoldgreenx.jpg" alt="Demostración" width="300"/>
+</p>
