@@ -36,7 +36,6 @@ Art
 
 
 ## Windows:
----
 
 <p align="center">
   <img src="./screenshots/preview2.png" alt="Demostración" width="800"/>
