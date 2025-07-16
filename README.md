@@ -33,3 +33,10 @@ Art
   <img src="./screenshots/preview.png" alt="Demostración" width="800"/>
   <img src="./screenshots/preview1.png" alt="Demostración" width="800"/>
 </p>
+
+
+## Windows:
+
+<p align="center">
+  <img src="./screenshots/preview2.png" alt="Demostración" width="800"/>
+</p>
