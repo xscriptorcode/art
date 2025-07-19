@@ -4,7 +4,7 @@
 Themes Available
 
 - [Drakula](./themes/drakula/kitty.conf)
-- [Xtropicalneon](./themes/xtropicalneon/kitty.conf)
+- [Xtropicalneon](./themes/xtropicalneon/README.md)
 
 
 ## Installation Instructions
@@ -29,10 +29,15 @@ curl -o ~/.config/kitty/themes/xtropicalneon/kitty.conf https://raw.githubuserco
 ```
 
 
-3, Include the theme in your main Kitty config or past the content:
+3. Include the theme in your main Kitty config or past the content:
 
 Edit ~/.config/kitty/kitty.conf and include one of the themes:
 
 ```bash
 include themes/xtropicalneon/kitty.conf
+```
+
+or just type:
+```bash
+echo "include themes/xtropicalneon/kitty.conf" >> ~/.config/kitty/kitty.conf
 ```
