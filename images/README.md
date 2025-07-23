@@ -1,11 +1,12 @@
 # Universal Images
 
-High-quality wallpapers designed to fit both mobile devices and desktop screens. They are organized by style B&N and Color.
+High-quality Images designed to fit both mobile devices and desktop screens. They are organized by style B&N and Color.
 you can find the preview here:
 
 ### [B&N](./byn/README.md)
 ### [Color](./color/README.md)
-
+### [Arch](./arch/README.md)
+### [kali](./kali/README.md)
 
 ## Categories
 
