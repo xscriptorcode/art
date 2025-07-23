@@ -35,7 +35,7 @@ GitHub: [github.com/xscriptorcode/art/images](github.com/xscriptorcode/art/image
 License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 
-## `mod/` Folder – Legal Notice
+## `mod/` Folder – Legal Disclaimer
 
 This folder contains visual content that is **not entirely original**. The materials here:
 
@@ -45,7 +45,7 @@ This folder contains visual content that is **not entirely original**. The mater
 
 ### License Disclaimer
 
-The images in this folder are **excluded from the general license (CC BY 4.0)** of this project.
+The content in this folder is **explicitly excluded** from the general license (CC BY 4.0) applied to the rest of the project.
 
 They are shared **for personal use only** and **not intended for redistribution** or any **commercial or public publishing** without permission from the original creators.
 
