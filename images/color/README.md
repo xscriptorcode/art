@@ -1,9 +1,4 @@
-# Images/Color/preview
-
-## There`s different categories in color:
-* Pure painting/ilustration art for general purpose.
-* Distros art:
-    * [kali](./kali/)
+# Images/Color/
 
 ### Download options:
 
