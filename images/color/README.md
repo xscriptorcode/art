@@ -1,4 +1,4 @@
-# Images/Color/preview
+# Images/Color/
 
 ### Download options:
 
