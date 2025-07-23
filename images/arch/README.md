@@ -1,5 +1,4 @@
-# Images/Arch/preview
-
+# Images/Arch
 
 ## Preview
 

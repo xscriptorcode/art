@@ -1,10 +1,5 @@
 # Images/Color/preview
 
-## There`s different categories in color:
-* Pure painting/ilustration art for general purpose.
-* Distros art:
-    * [kali](./kali/)
-
 ### Download options:
 
 1. You can manually explore and download files from gh one by one.
